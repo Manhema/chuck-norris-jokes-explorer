@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900");
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  /*font-family: 'Open Sans', 'Raleway', 'Helvetica Neue', sans-serif;*/
+  color: #292b2c;
+  font-family: "Maven Pro", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  background-color: #ffffff;
+}
