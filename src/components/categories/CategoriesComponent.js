@@ -58,9 +58,9 @@ class Banner extends React.Component {
   render() {
     let jumbotron = {
       background:
-        '-webkit-linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("https://u.imageresize.org/v2/da2feb50-9521-4981-8c53-5aa1e0ac5a31.jpeg"), no-repeat center center',
+        '-webkit-linear-gradient(rgba(0,0,0,0.72),rgba(0,0,0,0.2)), url("https://cdn.pixabay.com/photo/2013/07/13/13/34/man-161135_1280.png"), no-repeat center center',
       background:
-        "linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(https://u.imageresize.org/v2/da2feb50-9521-4981-8c53-5aa1e0ac5a31.jpeg),no-repeat center",
+        "linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.72)),url(https://cdn.pixabay.com/photo/2013/07/13/13/34/man-161135_1280.png),no-repeat center",
       WebkitBackgroundSize: "cover",
       MozBackgroundSize: "cover",
       OBackgroundSize: "cover",
@@ -134,27 +134,13 @@ class Category extends React.Component {
       objectFit: "cover",
       borderTopLeftRadius: "5px",
       borderTopRightRadius: "5px"
-      // border: '3px solid rgba(0,0,0,.1)'
     };
-    let traderClick = {
-      cursor: "pointer"
-    };
-
-    let fs085em = {
-      fontSize: "0.8em",
-      textDecoration: "none",
-      display: "block",
-      color: "#9a9a9a"
-    };
-    // alert(this.props.name)
 
     let images = images_chuck();
     let cat = this.props.name;
     let image_scr = images.filter(function(model) {
       return model.category == cat;
     })[0];
-
-    // alert(image_scr.image)
 
     return (
       <div className="col-6 col-sm-4 col-md-3 mb-2">
@@ -253,13 +239,12 @@ class HomeComponent extends Component {
               />
             </div>
           ]}
-        {isCategoriesSuccess &&
-          this.state.page == 1 && (
-            <JokeComponent
-              type={this.state.type}
-              view={(page, type) => this.view(page, type)}
-            />
-          )}
+        {isCategoriesSuccess && this.state.page == 1 && (
+          <JokeComponent
+            type={this.state.type}
+            view={(page, type) => this.view(page, type)}
+          />
+        )}
       </div>
     );
   }
