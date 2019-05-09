@@ -58,13 +58,13 @@ class Banner extends React.Component {
   render() {
     let jumbotron = {
       background:
-        '-webkit-linear-gradient(rgba(0,0,0,0.72),rgba(0,0,0,0.2)), url("https://cdn.pixabay.com/photo/2013/07/13/13/34/man-161135_1280.png"), no-repeat center center',
+        '-webkit-linear-gradient(rgba(0,0,0,0.72),rgba(0,0,0,0.2)), url("https://texashighways.com/wp-content/uploads/2019/01/CN_Vid_Set-02-1024x576.jpg"), repeat center center',
       background:
-        "linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.72)),url(https://cdn.pixabay.com/photo/2013/07/13/13/34/man-161135_1280.png),no-repeat center",
-      WebkitBackgroundSize: "cover",
-      MozBackgroundSize: "cover",
-      OBackgroundSize: "cover",
-      backgroundSize: "cover",
+        "linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.72)),url(https://texashighways.com/wp-content/uploads/2019/01/CN_Vid_Set-02-1024x576.jpg), repeat center center",
+      WebkitBackgroundSize: "contain",
+      MozBackgroundSize: "contain",
+      OBackgroundSize: "contain",
+      backgroundSize: "contain",
       borderRadius: "0",
       boxShadow: "inset 0px -120px 80px -60px rgba(0,0,0,0.5)"
     };
